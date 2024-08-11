@@ -15,6 +15,7 @@
 <h3>JavaScript Arithmetic Operators</h3>
 <table border="1">
   <tr>
+
     <th>Operator</th>
     <th>Description</th>
   </tr>
