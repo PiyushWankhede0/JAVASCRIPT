@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let var const</title>
+</head>
+
+<body>
+    <h1>let var const </h1>
+
+    <script>
+        // var can be re-declared 
+        var a = 65;
+        var a = 85;
+        console.log(a)
+
+
+
+        // let can't be re-declared but can be updated
+        let b = "nothing";
+        // let b = "something";
+        // b=565;
+        console.log(b)
+
+
+        // let is block scoped
+
+        { 
+
+            // here b is deffrent becouse b variable is in the block 
+            let b = "one"
+            console.log(b)
+        }
+    
+// const can't be updated or re-declered
+        const head = "let,var,const";
+        console.log(head)
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // rest and spread operators 
+        function calculate(...num1){ // now this is rest operator 
+            return num1
+        }
+
+console.log(calculate(2 , 3 , 4 , 6))  // 
+
+const student = {
+
+    name : "thor" ,
+    id : 2563
+}
+
+function username(anyusername){
+    console.log(`the name of the student is ${anyusername.name} with id ${anyusername.id} and his  username is ${anyusername.name + anyusername.id} `)
+}
+username(student)
+
+
+// for array 
+
+const myArray = [1 , 2 , 3 , 4]
+function returnArray(getArray){
+    return getArray[2]
+}
+
+console.log(returnArray(myArray))
+    </script>
+</body>
+</html>

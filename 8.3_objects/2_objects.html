@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+    <script>
+
+const user1 = new Object()  // singleton object 
+// console.log(user1);
+
+user1.id = "111"
+user1.name = "thor "
+user1.active = true
+
+
+const user2 = {}  //non singleton object 
+
+
+const user3 = {
+    id : "123456",
+    email: "thor@gmail.com",
+    active: true,
+    location : "new york",
+    name : {
+        fullname: {
+            avengername:{
+                originalname: "tony stark",
+                othername : "iron man "
+            }
+            
+        }
+    }
+}
+
+console.log(user3.name);
+
+const obj1 = { 1: "a" , 2: "b"}
+const obj2 = { 3: "c" , 4: "d"}
+const obj3 = { 5: "e" , 6: "f"}
+
+
+// here we are join all object into one so {} this is our source object which is empty 
+// and after that all are target objects if we didnt write {} at first so first obj is our source object and other 
+// will merge into that object 
+
+const obj4 = Object.assign({} , obj1, obj2, obj3)
+console.log(obj4);
+
+
+// this will give same output as above but it is easy to access 
+const obj5 = {...obj1, ...obj2 , ...obj3}
+console.log(obj5);
+
+
+// object in array
+// const user5 = {
+//      {
+
+//      }, 
+//      {
+
+//      }
+// }
+
+// user5[1].email
+
+
+// here we make array of anything 
+
+console.log(Object.keys(user3));
+console.log(Object.values(user3));
+console.log(Object.entries(user3));
+
+
+// for check property is containt or not 
+
+console.log(user3.hasOwnProperty('loggedin'));
+
+// object de structure 
+
+const course ={
+
+    name : "englis",
+    price: "20000",
+    teacher: "kjfdh"
+
+
+}
+
+// if we want to access any value from course then we use 
+// course.english 
+
+// but in object de structure offer somthing easy 
+
+const {price} = course   // here we can assume course.price = price
+
+console.log(price)
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+
+// for of loop
+
+const arr = [1,2,3,4,5]
+for (const num of arr){
+    console.log(num);
+}
+
+// map 
+const map = new Map()
+map.set('IN' , "India")
+map.set('AUS' , "Austrilia")
+
+console.log(map)
+
+// for off loop  array
+
+for (const [key, value] of map) {
+    console.log(key, "=", value)
+}
+
+// for of loop for objects
+// we can notuse forof loop for objects
+// const obj1 = {
+//     '1': 'one',
+//     '2': 'two'
+// }
+// for (const k of obj1) {
+//     // console.log(k)
+// }
+
+
+
+
+// for in loop for objects 
+const obj2 = {
+    js : 'javascript',
+    cpp: 'c++',
+    rb: 'ruby',
+    sw: 'swift'
+}
+
+for (const l in obj2) {
+     console.log(`${l} = ${obj2[l]}`);
+}
+
+
+// for in loop  for an array 
+
+const numbers = [1,2,3,4,5]
+for (const m in numbers){
+    console.log(numbers[m])
+}
+
+
+// for each loop for array
+
+const city = ['csn' , 'pune' , 'goa' , 'mumbai' ]
+city.forEach(function (val){
+    console.log(val)
+})
+
+// from arrow function for each loop
+city.forEach( (val2) => {
+  console.log(val2)
+})
+
+
+
+const students = [
+    {
+        studentname: "pratik", 
+        per: 65
+    },
+    {
+        studentname: "mahesh", 
+        per: 54
+    },
+    {
+        studentname: "kiran", 
+        per: 85
+    }
+]
+
+students.forEach( (stud) => {
+    console.log(stud.studentname+ ' he obtains :' + stud.per +'%') 
+})
+
+
+
+//  filter 
+const mynum = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9]
+const newnum = mynum.filter( (num) => {
+    return num > 4
+
+})
+console.log(newnum)
+
+
+
+//  ==========
+
+
+    </script>
+</body>
+</html>

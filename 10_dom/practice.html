@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+.para{
+    color: red;
+    background-color: yellow;
+    font-size: 18px;
+}
+
+.newpara{
+    color: white;
+    background-color: black;
+    font-size: 25px;
+}
+
+    </style>
+</head>
+<body>
+    
+<h3>Q = create a new button element give it a text 
+    "click me " bg red and text white 
+    insert the button as the first element inside the body tag 
+
+</h3>
+
+<div>
+    this is div 
+</div>
+
+
+
+
+<h3>create a p tag in html give it a class and some styling now create a new class in css and try to append this class to the p element solve this using classlist </h3>
+
+
+
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut amet eos eaque repudiandae modi alias natus nulla perferendis, inventore necessitatibus.</p>
+
+    <script>
+let div = document.querySelector("div")
+        let btn = document.createElement("button");
+        // btn.innerHTML( <i>"clickme"</i>)
+        btn.innerHTML= "clickme"
+        div.prepend(btn);
+        btn.style.backgroundColor="red"
+        btn.style.color="white"
+
+
+let a = document.querySelector("p")
+
+//from class list method 
+// a.classList.remove('para');
+// a.classList.add('newpara');
+
+// from attribute method 
+// a.classList.add('nothing')
+a.setAttribute("class", "newpara");
+
+
+    </script>
+</body>
+</html>

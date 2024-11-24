@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+<img  id="photo" src="" alt="">
+
+
+
+
+    <script>
+
+        const URL = "https://dog.ceo/api/breeds/image/random";
+let photo = document.querySelector("#photo");
+
+
+        let getpic = async ()=> {
+            console.log("generating pic ...")
+            let response = await fetch(URL);
+            console.log(response) // JSON format 
+            let data = await response.json();
+            photo.innerHTML.data.url;
+
+
+
+        }
+
+    </script>
+</body>
+</html>

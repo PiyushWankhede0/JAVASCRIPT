@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+//  = single equal is used for asign anything like a = 4 , x = 9
+// == double equal is used for check it is equal or not ,  but it does not check the type of variables
+//  === double equal is used for check it is equal or not , and  it will  check the type of variables
+
+
+// switch (key){
+//     case value:
+
+//     break;
+
+//     case value:
+
+//     break;
+
+//     default:
+//         break;
+
+// }
+
+
+switch (2){
+    case 1:
+        console.log("first")
+
+    break;
+
+    case 2:
+        console.log("second")
+
+    break;
+
+    default:
+        console.log("none of the above")
+        break;
+
+}
+
+
+
+// here are some falsy values
+// false , 0 , -0 , BigInt 0n , "" , null , undefined , NaN
+
+// truthy values
+// "0" , `false` , " " , [] , {} , function(){}
+
+// if we need to check objects value and we want to call object then 
+const emptyobj = {}
+if (Object.keys(emptyobj).length === 0){
+    console.log("it is not a number")
+}
+
+
+
+// nnulish coalescing oerators (??) : null undefined 
+// it will print first value 
+// but if first value is null or undefined the it will print second value
+let val1 ;
+// val1 = 5 ?? 10
+val1 = null ?? 45
+
+console.log(val1)
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.box{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin-bottom: -px;
+    font-size: 18px;
+}
+
+p{border: 1px solid blue;}
+
+#btn1{
+    visibility: hidden;
+}
+
+.delet{
+    border: 2px solid black;
+    background-color:red;
+}
+
+.btn2{
+    border: 2px solid black;
+
+}
+
+    </style>
+
+</head>
+<body>
+
+<button id="btn">click me </button>
+
+
+<p> 
+
+   
+</p>
+
+    <script>
+ let a =document.getElementById("btn");
+
+
+a.addEventListener("click", (e) => {
+    let p = document.querySelector("p")
+
+let para  = document.createElement("div");
+let update = document.createElement("button");
+let create = document.createElement("button");
+
+
+
+para.innerText ="hello"
+para.className = "box"
+p.prepend(para)
+
+update.innerText = "update"
+    update.className = "delet"
+    para.after(update);
+
+
+    create.innerText = "delet"
+    create.className = "delet"
+    para.after(create);
+
+// another event 
+})
+
+// a.addEventListener("click" , (e) => {
+// let p = document.querySelector("p")
+//     let update = document.createElement("button")
+    
+//     update.innerText = "update"
+//     update.className = "delet"
+//     p.append(update);
+
+// })
+
+
+// a.addEventListener("click" , (e) => {
+//     let p = document.querySelector("p")
+//     let create = document.createElement("button")
+    
+//     create.innerText = "delet"
+//     create.className = "delet"
+//     p.append(create);
+// })
+
+
+//         a.onclick = (e) => {
+
+
+//  const b = document.createElement("div");
+//  b.innerText="hello"
+// b.className = "box"
+        
+      
+
+
+
+
+//             // b.innerHTML="byyy"
+        
+//         }
+
+
+
+
+
+            </script>
+</body>
+</html>

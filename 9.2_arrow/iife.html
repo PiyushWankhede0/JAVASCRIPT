@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+    <script>
+// Imediately Invoked Function Expression (IIFE)
+
+// this is regular function 
+
+
+function hello(){
+    console.log(`hello , friends `)
+}
+hello();   
+
+// but we want to get rid global scope polution which is occure by variebals and functions 
+
+// syntax 
+
+(function hi(){
+    console.log(`hi ,friends `)
+})();
+
+
+// we can also use arrow function 
+
+( (name) => {
+    console.log(` this is arrow function print with ${name} `)
+})(`name`);
+
+
+
+    </script>
+</body>
+</html>

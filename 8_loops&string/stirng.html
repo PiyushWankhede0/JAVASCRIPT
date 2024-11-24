@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+        // string 
+
+        let str = "hello world "
+
+        console.log("calculating the lenght of string ")
+        console.log(str.length)
+
+        //position of char 
+       console.log("position of char")
+        console.log(str[1])
+
+
+        //template litrels is a special type of litrelas
+
+        let obj = {
+            name: "java",
+            code: 2013,
+        }
+        // this o\p from template litrels 
+        // but in this number change into a string 
+        let output = `the code of ${obj.name} is ${obj.code}`;
+        console.log(output)
+        // and this is our commen o\p
+        console.log("the code of ", obj.name, "is ", obj.code)
+
+
+        // escape char 
+        // \n it used for move the line into next line 
+        // and (\n) count as 1 char 
+        console.log("hello\nworld")
+
+        //\t
+        // tab space
+        console.log("hello\tworld")
+
+        // string methos 
+
+        let a = "   notHIng"
+
+        // to upper case 
+
+        console.log(a.toUpperCase())
+
+        // lower case 
+
+        console.log(a.toLowerCase())
+
+        
+
+        // trim space 
+        console.log(a.trim())
+
+
+        // slice ][
+        
+    
+        // it will give you starting index (include) to ending index (not include)
+        console.log(a.slice(3,6))
+
+        // concat 
+    
+         let newstr = str.concat(a); 
+        console.log(newstr);
+        // another method
+        let newstr2 = str + a ;
+        console.log(newstr2);
+
+
+        // replace 
+        console.log(str.replace("h" , "y"));
+
+        // char at which index 
+        console.log(str.charAt(3));
+
+
+console.log("Q) get a name from the user and genrerate the user name which will contant @ at the start and lenth of str at last and give the password to the user according their personal information ")
+
+let name = prompt("enter your name ")
+let dob = prompt("enter the DOB (ddmmyyyy)")
+
+// console.log(name.length)
+let username = "@" + name + name.length;
+
+
+
+// console.log(name.toUpperCase())
+// up = name.toUpperCase()
+
+let password = (name.slice(0,4)).toUpperCase() + name.slice(4,6) + dob.slice(4,8)
+console.log(username)
+console.log(password)
+
+
+    </script>
+</body>
+
+</html>

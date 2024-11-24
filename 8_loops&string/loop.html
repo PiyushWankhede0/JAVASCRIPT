@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const book = [
+            {
+                name:"book one" , type:"horror" , publish: 2006 , author:"j.k.rollin"
+            },
+
+            {
+                name:"book two" , type:"history" , publish: 2008 , author:"r.k"
+            },
+
+            {
+                name:"book three" , type:"science" , publish: 1996 , author:"p.l"
+            },
+
+            {
+                name:"book four" , type:"horror" , publish: 2012 , author:"h.r"
+            },
+
+            {
+                name:"book five" , type:"history" , publish: 2006 , author:"n.o"
+            },
+
+            {
+                name:"book six" , type:"comedy" , publish: 2001 , author:"j.k.rollin"
+            },
+        ]
+
+        const user = book.filter( (bk) => {
+            return bk.author === "j.k.rollin"
+        }) 
+        console.log(user)
+        
+        </script>
+</body>
+</html>

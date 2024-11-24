@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+
+
+</head>
+<body>
+    
+
+
+
+<script>
+
+// when we make functions defination it is parameter
+// when we execute function then it is argument 
+
+
+let a = prompt("enter the value of a ")
+a = Number.parseInt(a)
+
+let b = prompt("enter the value of b ")
+b = Number.parseInt(b)
+
+
+//we can use this also function cal(a,b){
+const  cal = (a,b) => {
+console.log(a+b)
+console.log(a*b)
+console.log(a/b)
+console.log(a-b)
+}
+
+cal(a,b)
+//cal(a,b);
+
+
+
+// create a function using the function keyword that takes 
+// a string as an argument and returns the number of vowels in the string
+console.log("count the number of vowels in str ")
+
+let x = prompt("enter the string")
+// we can use function countstring(x){
+const  countstring = (x) =>{
+    let count = 0;
+for (const char of x ){
+    if(
+     char === "a"||   
+     char === "e"||
+     char === "o"||
+     char === "i"||
+     char === "u"
+    ){
+        count++;
+    }
+}
+console.log(count)
+
+}
+
+countstring(x);
+
+
+
+
+
+// for each loop 
+// this is a higher order function 
+
+console.log("this is a for each loop")
+
+let arr = [1, 2, 3, 4, 5 ];
+
+arr.forEach(function printval(val){
+    //output will be squre 
+console.log(val*val);
+});
+
+
+// array methods (map)
+// map is used for return new array 
+console.log(" this map is used for return new array ")
+
+let m =[1,2,3,4,5,6,7,8,9,10]
+ 
+let z = m.map((val)=> {
+    return val*val;
+})
+
+console.log(z)
+
+
+// array method (filter)
+// filter the value from given array 
+
+console.log("this will filter according to your need ")
+
+let filt = m.filter((val) => {
+    return val % 2 !== 0  
+})
+
+console.log(filt);
+
+// array method (reduce)
+// ths will reduce the array into single value
+
+console.log("this reduce method reduce the string into single output")
+
+const new1 = 0;
+const sum = m.reduce(
+   (first , second) => first + second , new1 
+);
+
+console.log(sum);
+
+
+
+console.log(" Q) we are given array of marks of student filtter out of the marks of student that scored 90+")
+let markofstudent =[a=30,
+b=45 ,c=26,d=90, e=45,f=96,g=97,h=36,i=97,j=64,k=25,l=91,m=56,n=99]
+// // let count = 0;
+// for (let marks in markofstudent ){
+//     if (marks >=90)
+// // {count++}
+// console.log(marks)  
+// }
+
+
+let marks =markofstudent.filter((val) =>
+{
+    return val >=90;
+})
+console.log(marks)
+
+
+
+
+console.log("take a number n as input and create an array from 1 to n ")
+
+let p = prompt("enter the number for array ")
+p= Number.parseInt(p)
+let count = 1
+do{
+    console.log(count)
+    count++
+}
+while (count<=p)
+
+
+
+console.log("use the reduce method to calculate sum of the array")
+let y=[1,2,3,4,5]
+let red = 0;
+let re = y.reduce(
+    (f , s) => 
+    f + s ,red
+);
+console.log(re)
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+    <script>
+
+// it is a simple array
+const arr = [0 , 1 , 2 , 3 , 4 , 5]
+
+// console.log(arr);
+
+
+// here we push number 6 in the array 
+arr.push(6)
+console.log(arr);
+
+// it will remove last element from the array 
+arr.pop()
+console.log(arr);
+
+// it will add the value in front of the arr 
+arr.unshift(5)
+console.log(arr);
+
+// it used to remove first element from the array
+arr.shift()
+console.log(arr);
+
+
+const arr2 = arr.join()
+
+console.log(arr2);
+console.log(typeof arr2)
+
+
+// slice and splice 
+
+
+const myarr = [10,11,12,13,14,15]
+
+// original array 
+console.log(myarr);
+
+// we do a slice tp print the value from index 1 to 3 but here 3rd index will not include
+const new1 = myarr.slice(1,3);
+console.log(new1);
+console.log(myarr);
+
+
+// here is will print the value 1 to 3rd index and includes both 1st and last index and print the new array  ((( but here whatever will be print it will remove from the original arr )))
+const new2 = myarr.splice(1,3);
+console.log(new2);
+console.log(myarr)
+
+
+
+// is is a simple array
+const list1 = [10, 20 , 30 , 40 , 50]
+console.log(list1);
+
+
+ const list2 = [100 , 200 , 300 , 400 , 500]
+console.log(list2);
+
+// we combine both array in one by this methos insted of concat 
+ const newlist = [...list1 , ...list2]
+ console.log(newlist);
+
+
+ // this is the complex arr and we want simple array of combine of  that so we use flat
+ const complexarr = [1,2 , [1,7,8 ] , [8,6,9, [8,5,2,[1,2]]]]
+console.log(complexarr);
+
+console.log(complexarr.flat(Infinity))
+
+
+
+console.log(Array.from("nothing"));
+
+
+    </script>
+</body>
+</html>

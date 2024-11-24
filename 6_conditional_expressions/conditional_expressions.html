@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional</title>
+</head>
+
+<body>
+
+    <h2>This is the condtional expression </h2>
+<h3>shirt <br> t-shirt <br> pant <br> cap </h3>
+    <script>
+
+        let a = prompt("obtained marks ?");
+        a = Number.parseInt(a);
+
+        // this is the simple if else condition 
+        if (a < 35) {
+            alert("you are fail in exam ")
+        }
+
+        else {
+            alert("you are pass in exam ")
+        }
+
+
+        // this is the if else if condition 
+
+        if (a >= 0 && a <= 34) {
+            alert("Better luck next time ")
+
+        }
+        else if (a >= 35 && a <= 74) {
+            alert("you are passed the exam with A grade")
+        }
+
+        else if (a >= 75 && a <= 100) {
+            alert("you are passed the exam with A+ grade ")
+        }
+
+        else {
+            alert("input is not valid ")
+        }
+
+
+
+
+
+        // this is the switch condition 
+
+        let price = prompt("product ?")
+let result
+        switch (name) {
+            case 'shirt':
+                alert( "500 to 5000")
+                break;
+
+
+            case 't-shirt':
+                alert( "300 to 3000")
+                break;
+
+            case 'pant':
+                alert ("700 to 6000")
+                break;
+
+            case 'cap':
+                alert("200 to 1000")
+                break;
+
+            default:
+                alert(  "100 to 12000")
+        }
+        
+    </script>
+
+</body>
+
+</html>

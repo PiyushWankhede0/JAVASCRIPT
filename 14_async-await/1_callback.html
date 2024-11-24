@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+function getdata(dataid , getNextData){
+    setTimeout(() =>{
+        console.log("data", dataid);
+        if (getdata){
+            getNextData();
+
+        }
+    }, 3000)
+}
+        
+// this is nested callback  
+getdata(1, ()=> {
+    // here we canot put loop direct into another we have to use arrow function and then put getdata2
+    getdata(2, ()=>{
+        getdata(3, ()=>{
+            getdata(4)
+        });
+    });
+});
+    </script>
+</body>
+</html>

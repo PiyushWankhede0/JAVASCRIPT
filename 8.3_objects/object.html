@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+const mySym = Symbol("key1")
+
+const user = {
+    name : "ironman",
+    age : 40,
+    id : "12021",
+    [mySym]:"sym1",
+    location: "new york",
+    email: "ironman.avengers@gmail.com",
+    isactive:false,
+    
+ 
+    }
+        
+    console.log(user.email);
+
+    //we can also access though []
+    console.log(user["email"]);
+
+    // if we want to print or access stmbols the it is the only way to access
+
+   console.log(user[mySym])
+     
+user.id = "123456";
+console.log(user.id);
+
+
+// console.log(user);
+
+
+
+ // we can concatinat with the help of backtics 
+ 
+user.info = function(){
+    console.log(`this is a ${this.name} and the id is ${this.id}`);
+}
+
+console.log(user.info())
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!-- inheritance is passing down  property and methods from oarent class to child class  -->
+
+<!-- syntx 
+
+class parent {
+
+}
+
+class child extends parent {
+
+
+}
+-->
+
+
+<!-- µµñ©æáßðø¶´«ö«»öóíúüüþ®éåä¡²³¤²³¤€¼¼½½¾‘’¥× -->
+
+<!-- if child and parent have same method , child method will be used (method overriding )  -->
+    <script>
+
+class staff {
+
+constructor(){
+    console.log("parent class constructor ")
+}
+
+    employee(){
+        console.log(" can access basic information ")
+    }
+
+
+    duty_manager(){
+        console.log("manage the bussness in his shift ")
+    }
+
+    hr(){
+        console.log("can hired and fired  anyone ")
+    }
+
+   
+}
+
+let person1 = new staff();
+
+
+
+
+class owner extends staff{
+
+    constructor(){
+        console.log("child class comstructor")
+        super();
+    }
+
+    boss(){console.log("attend the meeting ");
+    }
+} 
+
+let person2 = new owner();
+
+    </script>
+</body>
+</html>

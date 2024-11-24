@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primitive or non-primitive data types</title>
+</head>
+<body>
+    
+<h3>primitive or non-primitive data types</h3>
+
+<script>
+    // this is null datatype
+    let a = null;
+//this is number datatype
+let b = 123
+//string 
+let c = "Name"
+//symbol 
+let d = Symbol("this is the symbol")
+//boolean 
+let e = true;
+// byte
+let f = BigInt("123")
+//undefined
+let g 
+
+// printing all primitive datatype
+console.log(a , b, c , d, e, f, g)
+
+// print type of all primitive datatype
+console.log(typeof a ,typeof  b , typeof c,typeof d, typeof e, typeof f, typeof g)
+
+
+
+
+
+// conversion of data types 
+
+let num = 1;
+console.log(typeof num);
+let numinstr = String(num);
+console.log(typeof numinstr);
+
+
+
+let str = "123";
+console.log(typeof str);
+let strinnum = Number(num);
+console.log(typeof strinnum);
+
+let value = true;
+console.log(typeof value);
+let boolinnum = Number(value);
+console.log(boolinnum);
+
+
+//               oprations 
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + "2");
+
+
+// its all depend on first value we have taken 
+// if we take first as str o/p will be in str 
+// if we take first as num o/p will be in num
+console.log("1" + 2 + 3 );
+console.log(1 + 2 + "3");
+console.log(1 + "2" + 3)
+
+
+// here we can see null is not any number means o/p is false
+console.log(null > 0);
+console.log(null == 0);
+
+// in this situation both o/p are true 
+// it should not be same but the (< and > ) are 
+// treating null as a number 0 
+console.log(null >= 0);
+console.log(null <= 0);
+
+
+ 
+
+
+</script>
+</body>
+</html>

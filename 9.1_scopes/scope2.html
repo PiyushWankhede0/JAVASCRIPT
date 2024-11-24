@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+
+// the code inside a function is not executed when the function is defined 
+// the code inside a function is executed when the function is invoked or called
+
+
+        function one(){
+      const name = "thor"
+
+
+      function id(){
+        const id = 123098
+
+        console.log(name)
+      }
+
+id()   // function id() is invoked here
+        }
+        one() //= function one() is invoked here 
+
+// in the above function the child function can access parent function as they are global for child but parent function can  not access child function 
+
+
+
+// here are some method for declear function 
+
+
+
+
+console.log(addnum1(5)) // if we write console below or above the function it will give same output 
+
+function addnum1(num1){
+    return num1 + 1
+}
+
+
+const savevalue = function addnum2(num1){
+    return num1 + 2
+} // first this will must be initialize after that we can invoked the value
+
+console.log(savevalue(8)) // it is must belove the code 
+
+    </script>
+</body>
+</html>

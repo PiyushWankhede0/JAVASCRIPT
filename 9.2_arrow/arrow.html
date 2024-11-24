@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+
+
+const student = {
+sname : "gotya" ,
+marks: 54 , 
+
+markssheet : function() {
+ 
+    console.log( ` name of the student ${this.sname} have ${this.marks} marks ` )
+
+// here this is refers to current contex or have limitetion between local scope and access parent class only 
+
+    console.log(this) //  this will print current contex 
+}
+}
+student.markssheet()  // o/p name of the student gotya have 54 marks 
+
+console.log(this)  // 
+
+
+
+
+// this keyword only can access in object not in functions 
+
+function hello(){
+    let a = "hello"
+    // console.log(this.a) this will give undefined o/p
+
+   console.log(a)
+
+}
+hello()
+
+
+
+
+// arrow functions 
+
+const hi = () => {
+let a = "hello world "
+// console.log(this)
+console.log(a)
+
+}
+hi()
+
+// this is regular arrow function 
+const add = (one , two ) => {
+return one + two 
+}
+console.log(add(4 , 6 ))
+
+//this arrow function works same as above but 
+const two = (one , two ) => one + two
+console.log(add(45 , 6 ))
+
+// this arrow function same as above , 
+// when we remove breces from function we can also remove return keyword and add parentisis
+const three = (one , two ) => (one + two)
+console.log(add(45 , 60 ))
+
+
+
+// what if we want to return object 
+const obj1 = () => ({
+    name : "iron man ",
+    Number : 5236,
+    location : "new york"
+})
+
+console.log(obj1()) // this will print all input from obj1 
+    </script>
+</body>
+</html>

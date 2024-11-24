@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const balance = new Number(500.129)
+        console.log(balance);
+        // console.log(balance.value);
+
+        console.log(balance.toString());
+        console.log(typeof balance);
+
+
+        // it will convert value upto 2 decimal point 
+        console.log(balance.toFixed(2));
+
+        const num = 124.5652
+        
+        // it will round of the value we given 
+        console.log(num.toPrecision(3));
+
+        const hundreds = 100000000
+        console.log(hundreds.toLocaleString('en-IN'))
+
+
+
+
+
+      console.log(Math);
+      
+      // it  is a property which convert all sign value to +ve  
+      console.log(Math.abs(-54));
+      
+
+      // it will round off the value 
+      console.log(Math.round(52.32));
+
+
+      console.log(Math.min(1,2,3,4));
+      console.log(Math.max(1,2,3,4));
+
+
+      // it will give you the value b/w 0 to 1 randomly
+      console.log(Math.random());
+
+      //  
+
+
+       const min = 1000
+       const max = 9999
+
+
+       // it will help to give the value b/w min+1 to max+1 
+       console.log(Math.round(Math.random() * (max - min + 1)) + min)
+
+
+
+    </script>
+</body>
+</html>
