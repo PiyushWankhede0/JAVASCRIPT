@@ -1,0 +1,142 @@
+<!DOCTYPE html>      
+<!--  this is refer to this is html file -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    
+    <!-- DOM :- document object model-  -->
+        
+
+    <div class="parent">
+
+        
+    <div class="day">mon</div>
+    <div class="day">tue</div>
+    <div class="day">wed</div>
+    <div class="day">thu</div>
+   
+
+<!-- lksdlknc -->
+
+    </div>
+<div class="one">
+
+</div>
+
+
+    <script>
+
+// innerHTML , innerText , textContent 
+
+// innerHTML gives you all text with html tags 
+// innerText gives you only text which is shown 
+// innerContent gives you text and hidden text also 
+
+
+const parent = document.querySelector('.parent')
+console.log(parent)
+
+// here we can access parent from the children 
+
+console.log(parent.children[2])
+
+for (let i = 0; i < parent.children.length; i++) {
+   console.log(parent.children[i].innerHTML+ " day")
+}
+
+// and here we are accessing parent from childre 
+const dayone = document.querySelector('.day')
+console.log(dayone.textContent)
+
+console.log(dayone.parentElement)
+
+
+// this is node list 
+// it counts all the input which are given eg , 
+// change in line,  break ,text , comment  
+
+
+console.log("node list : " , parent.childNodes)
+
+
+// create element 
+const create = document.createElement('div')
+ const div11 = document.createTextNode(" this is new div createt by js ")
+// console.log(create);
+
+// const divone = document.querySelector('.one')
+// divone.innerText = (create)
+
+//here we created div in js thats why first  we have to create div and then we create its text and by appendchild we join them 
+// after that for showing on webpage we connect this to body all this shown in below 
+create.appendChild(div11)
+document.body.appendChild(create)
+
+
+
+// but here we create something and we will join this to webpage in webpage there is alredy a element where we will connect this 
+const h = document.createElement('h2')
+h.innerHTML = "hello javascript"
+console.log(h)
+const heading = document.querySelector('.one')
+heading.appendChild(h)
+
+
+
+
+
+// here we will going to create a function where we can add some more days to list 
+
+const parent1 = document.querySelector('.parent')
+
+const  addays = ((newday) => {
+
+   const day=  document.createElement('div');
+   day.innerHTML = `${newday}`
+
+   
+parent1.appendChild(day)
+// return newday()
+
+})
+   addays("fri")
+
+
+// this will also give same output but it is effective method to use  
+   const adddays2way = ((add) => {
+    const day = document.createElement('div')
+    day.appendChild(document.createTextNode(add));
+  parent1.appendChild(day)
+   })
+   adddays2way("sat")
+
+
+// edit 
+console.log("this is edit method")
+const firstday = document.querySelector(".day:nth-child(1)")
+// console.log(firstday)
+const newday = document.createElement('div')
+newday.textContent = "sun"
+firstday.replaceWith(newday)
+
+
+// other way to edit 
+
+const secondday = document.querySelector(".day:nth-child(2)")
+console.log(secondday)
+secondday.outerHTML = '<div>mon</div>'
+
+// remove 
+console.log("this is remove method")
+const remo = document.querySelector(".day:nth-child(4)")
+// console.log(remo)
+remo.remove()
+
+
+    </script>
+</body>
+</html>

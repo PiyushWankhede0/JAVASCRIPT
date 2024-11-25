@@ -39,6 +39,37 @@
         }) 
         console.log(user)
         
+
+
+        const mynumbers = [1,2,3,4,5,6,7,8,9,10]
+
+        const newnum = mynumbers.map( (num) => {
+            return num + 10
+        })
+        console.log(newnum)
+
+        const new1 = mynumbers.forEach((val) => {
+            console.log(val + 20)
+            // return val + 20
+        })
+        // console.log(new1)
+
+
+
+        // chaning 
+// here we can make chain like map(1).map(2).filter(3) just like this 
+// the first output is seconds input 
+        const chain = mynumbers.map((num) => { return num * 20 }).map((num) => { return num + 5})
+        console.log(chain)
+
+
+        // reduce()   method
+        const price = [ 300 , 542 , 999 , 865 , 759 , 874]
+        const total = price.reduce((acc , curent) => {
+            console.log(` acc: ${acc} and curent value is ${curent} `)
+return acc + curent
+        }, 0)
+        console.log(`total cart price is : ${total}`)
         </script>
 </body>
 </html>
